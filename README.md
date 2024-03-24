@@ -1,7 +1,7 @@
 # My Portfolio
 ・❥ Feel free to clone it and create your own resume web page !
 <br />
-・❥ Contains different animations and your CV
+・❥ Contains different animations and even your CV, ready to be printed out :p
 <br />
 ・❥ Check it out: https://my-it-portfolio.web.app/
 <br />
