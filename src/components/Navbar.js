@@ -16,6 +16,8 @@ const Navbar = () => {
       </Link>
       <div className='desktopMenu'style={{ marginRight: '50px' }}>
         <Link to="/" className='desktopMenuListItem'><strong>Home</strong></Link>
+        <Link to="/coding"  className='desktopMenuListItem'><strong>Projects</strong></Link>
+        
         <Link to="/about"  className='desktopMenuListItem'><strong>About</strong></Link>
         <Link to="/cv"  className='desktopMenuListItem'><strong>CV</strong></Link>
        </div>

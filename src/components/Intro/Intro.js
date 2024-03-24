@@ -3,14 +3,13 @@ import { Link } from 'react-router-dom'
 import Navbar from '../Navbar.js';
 import Particles from '../Particles.js';
 import './Intro.css';
-
+import Maze from './Maze.js';
 
 function Intro() {
   return (
     <> 
     <Navbar/> 
     <Particles id="tsparticles" />
-    <section id="intro">
       <div className='introContent'>
       
         <span className='Hello'>Hello,</span>
@@ -23,9 +22,6 @@ function Intro() {
         </button>
         </a>
         </div>
-     
-    </section>
-    
     </>
   )
 }

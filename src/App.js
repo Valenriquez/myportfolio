@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import Cv from './components/cv/Cv';
+import Coding from './components/Coding/Coding';
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/cv" element={<Cv />} />
-      </Routes>
+        <Route path="/coding" element={<Coding />} />
+       </Routes>
       </BrowserRouter>
     </React.Fragment>
  

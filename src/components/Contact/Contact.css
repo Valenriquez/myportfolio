@@ -3,5 +3,46 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 80vh;  
+    height: 80vh; 
+    gap: 20px;
+}
+.btn1 {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: transparent;
+    color: #000000;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.btn1::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: linear-gradient(45deg, #95ff93, #f6c9f6, #95ff93, #f6c9f6);
+    transition: all 0.5s ease;
+    border-radius: 5px; /* Adjusted for better appearance */
+    z-index: -1; /* Pushed behind the text */
+    transform: translate(-50%, -50%);
+}
+.btn1:hover::before {
+    width: 0;
+    height: 0;
+}
+.btn1 span {
+    position: relative;
+    z-index: 2; /* Ensure text appears above the background */
+}
+.btn1:hover {
+    color: #fff; /* Change text color on hover */
 }

@@ -1,0 +1,92 @@
+.square-link {
+  text-decoration: none;
+  transition-property: box-shadow, transform;
+  transition-duration: 350ms;
+  transition-timing-function: ease;
+
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.24);
+  }
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-300px);
+  }
+  to {
+      transform: translateX(0);
+  }
+}
+
+.animation-effect{
+  color: aliceblue;
+  animation-name: slideInLeft;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+}
+
+.anim-typewriter{
+    animation: typewriter 4s steps(44) 1s 1 normal both,
+               blinkTextCursor 500ms steps(44) infinite normal;
+  }
+  @keyframes typewriter{
+    from{width: 0;}
+    to{width: 10;}
+  }
+  @keyframes blinkTextCursor{
+    from{border-right-color: rgba(255,255,255,.75);}
+    to{border-right-color: transparent;}
+  }
+  
+@keyframes slidein {
+  from {
+      margin-left: 100%;
+      width: 300%;
+  }
+  
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.square {
+  width: 800px; 
+  height: 100px; 
+  border: 1px solid orange; 
+  border-radius: 8px; 
+  padding: 20px; 
+  cursor: pointer; 
+  display: flex;
+  justify-content: center;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: white;
+
+  
+  transition-property: box-shadow, transform;
+  transition-duration: 350ms;
+  transition-timing-function: ease;
+
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.24);
+}
+
+@keyframes typing {
+  from { width: 0; } 
+  to { width: 100%; } 
+}
+
+.square:is(:hover, :focus) {
+  box-shadow: 0px 8px 10px 1px rgba(0, 0, 0, 0.2);
+  transform: translateY(-8px);
+}
+
+.p-about-page {
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: monospace;
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+  animation: typing 4s steps(40) forwards;
+}
+

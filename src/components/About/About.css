@@ -1,3 +1,79 @@
-.text-zone{
-    color: white;
+.text-zone-about {
+  color: white;
+}
+
+main {
+  display: flex;
+  height: 100%;
+  align-items: left;
+}
+
+.important-det{
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  font-size: 3rem;
+  background: linear-gradient(to bottom, #ffffff, #fbfff9 60%, #000000 60%, #000000 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-repeat: no-repeat;
+  transition: background 0.2s ease-out;
+  white-space: nowrap;
+}
+
+.effect {
+  position: relative;
+}
+
+.effect:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 15px;
+  background: #f8f8f8;
+  bottom: 9px;
+  transition: all 0.2s ease-out;
+}
+
+.important-det:hover {
+  background-position: 0 11px;
+}
+
+.effect:hover:before {
+  transform: translateY(10px)
+}
+
+.page {
+  color: white;
+  display: inline-block; 
+  transition: transform 0.2s ease; /* Smooth transition for the pop-up effect */
+  cursor: pointer;
+
+}
+.symbol{
+  transition: transform 0.2s ease; /* Smooth transition for the pop-up effect */
+}
+
+.page:hover {
+  transform: translateY(-5px); /* Move text slightly up on hover */
+
+}
+
+.symbol:hover {
+  transform: translateY(-5px); /* Move text slightly up on hover */
+  animation: changeColor 2s infinite alternate; /* Animate color change */
+}
+
+@keyframes changeColor {
+  0% {
+      color: #2ade51; /* Start color */
+  }
+  50% {
+      color: #a7ecb5; /* Intermediate color */
+  }
+  100% {
+      color: #b8eac2; /* End color */
+  }
 }
